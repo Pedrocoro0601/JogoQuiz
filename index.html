@@ -17,7 +17,6 @@
             <div class="logo-area">
                 <div class="icon-logo">🔺</div>
                 <h1>Quiz do Bruno</h1>
-                <!-- Subtítulo removido -->
                 <p class="intro-text">Opa, bão? Chega mais pra testar seus conhecimentos, uai!</p>
             </div>
             
@@ -36,10 +35,59 @@
                         <span>Só pros dev raiz</span>
                     </div>
                 </button>
+                <button class="btn btn-info btn-lg" onclick="showAbout()">
+                    <span class="icon">ℹ️</span>
+                    <div class="btn-text">
+                        <strong>Sobre o Jogo</strong>
+                        <span>Curiosidades e Estatísticas</span>
+                    </div>
+                </button>
             </div>
             <footer class="start-footer">
                 Criado com carinho e pão de queijo.
             </footer>
+        </section>
+
+        <!-- Tela Sobre -->
+        <section id="about-screen" class="screen">
+            <header class="game-header">
+                <button class="btn-icon" onclick="goToHome()" aria-label="Voltar">
+                    ⬅️
+                </button>
+                <h2 style="font-size: 1.2rem; color: var(--text-main);">Sobre o Jogo</h2>
+            </header>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>📚 Acervo do Quiz</h3>
+                    <p>Este jogo foi desenvolvido para testar conhecimentos gerais e técnicos com um toque mineiro!</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" id="total-questions-count">0</span>
+                            <span class="stat-label">Perguntas Totais</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="tech-questions-count">0</span>
+                            <span class="stat-label">Perguntas de TI</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="family-questions-count">0</span>
+                            <span class="stat-label">Variedades</span>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 20px; color: var(--secondary-color);">Categorias Disponíveis:</h4>
+                    <ul class="categories-list">
+                        <li>🔺 Minas Gerais</li>
+                        <li>💻 Tecnologia & Programação</li>
+                        <li>🌍 Geografia & História</li>
+                        <li>🧪 Ciências & Matemática</li>
+                        <li>🎬 Filmes, Música & Cultura Pop</li>
+                        <li>⚽ Esportes</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" onclick="goToHome()" style="margin-top: 20px;">Voltar ao Menu</button>
+            </div>
         </section>
 
         <!-- Tela do Jogo -->
@@ -87,7 +135,6 @@
                         <!-- Botões gerados via JS -->
                     </div>
 
-                    <!-- Área de ajuda removida conforme solicitado -->
                     <div class="lifelines-area"></div>
                 </div>
             </div>

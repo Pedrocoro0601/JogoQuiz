@@ -165,8 +165,7 @@ const allQuestions = [
         explanation: "React é uma biblioteca JavaScript popular criada pelo Facebook para construir interfaces de usuário."
     },
 
-    // --- NOVAS PERGUNTAS ADICIONADAS (MISTURADAS) ---
-    
+    // --- NOVAS PERGUNTAS (LOTE ANTERIOR) ---
     // Nível Fácil
     {
         question: "Qual é a cor da caixa preta dos aviões?",
@@ -571,19 +570,434 @@ const allQuestions = [
         category: "matematica",
         difficulty: 3,
         explanation: "Um icosaedro regular possui 20 faces triangulares."
+    },
+
+    // --- NOVAS 50 PERGUNTAS ADICIONADAS ---
+    
+    // -- FÁCEIS (Novas) --
+    {
+        question: "Onde o Sol nasce?",
+        options: ["Norte", "Sul", "Leste", "Oeste"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 1,
+        explanation: "O Sol nasce no Leste (ou Oriente) e se põe no Oeste."
+    },
+    {
+        question: "Qual é o personagem principal do Sítio do Picapau Amarelo?",
+        options: ["Pedrinho", "Emília", "Dona Benta", "Visconde"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 1,
+        explanation: "A boneca de pano Emília é a personagem mais icônica e falante."
+    },
+    {
+        question: "Quantos segundos tem um minuto?",
+        options: ["50", "60", "100", "30"],
+        correct: 1,
+        category: "matematica",
+        difficulty: 1,
+        explanation: "Um minuto é composto por 60 segundos."
+    },
+    {
+        question: "Qual animal diz 'miau'?",
+        options: ["Cachorro", "Gato", "Vaca", "Pato"],
+        correct: 1,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O miado é o som característico dos gatos."
+    },
+    {
+        question: "Qual cor resulta da mistura de azul e amarelo?",
+        options: ["Verde", "Roxo", "Laranja", "Marrom"],
+        correct: 0,
+        category: "arte",
+        difficulty: 1,
+        explanation: "Azul e amarelo são cores primárias que, misturadas, formam o verde."
+    },
+    {
+        question: "Qual é a capital da França?",
+        options: ["Londres", "Berlim", "Paris", "Madri"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 1,
+        explanation: "Paris, a Cidade Luz, é a capital francesa."
+    },
+    {
+        question: "Quantas pernas tem uma aranha?",
+        options: ["4", "6", "8", "10"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "Aracnídeos, como as aranhas, possuem 8 patas (4 pares)."
+    },
+    {
+        question: "Qual fruta a Branca de Neve comeu?",
+        options: ["Banana", "Maçã", "Pera", "Uva"],
+        correct: 1,
+        category: "filmes",
+        difficulty: 1,
+        explanation: "Ela comeu uma maçã envenenada pela bruxa."
+    },
+    {
+        question: "O que o herbívoro come?",
+        options: ["Carne", "Plantas", "Insetos", "Tudo"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "Herbívoros alimentam-se exclusivamente de vegetais."
+    },
+    {
+        question: "Qual é o maior mamífero do mundo?",
+        options: ["Elefante", "Baleia Azul", "Girafa", "Rinoceronte"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "A Baleia Azul pode chegar a 30 metros de comprimento."
+    },
+    {
+        question: "Quem é o parceiro do Batman?",
+        options: ["Coringa", "Robin", "Superman", "Flash"],
+        correct: 1,
+        category: "filmes",
+        difficulty: 1,
+        explanation: "Robin é o fiel ajudante do Homem-Morcego."
+    },
+    {
+        question: "Em que estação do ano faz mais frio?",
+        options: ["Verão", "Primavera", "Outono", "Inverno"],
+        correct: 3,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O Inverno é a estação caracterizada pelas temperaturas mais baixas."
+    },
+    {
+        question: "Quantos meses tem um ano?",
+        options: ["10", "11", "12", "13"],
+        correct: 2,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O calendário gregoriano possui 12 meses."
+    },
+    {
+        question: "O que se usa para medir a febre?",
+        options: ["Barômetro", "Termômetro", "Velocímetro", "Régua"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "O termômetro é o instrumento usado para medir temperatura corporal."
+    },
+    {
+        question: "Qual é a língua oficial do Brasil?",
+        options: ["Espanhol", "Inglês", "Português", "Francês"],
+        correct: 2,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O Brasil foi colonizado por Portugal, herdando o idioma."
+    },
+    {
+        question: "O que é H2O?",
+        options: ["Sal", "Açúcar", "Água", "Vinagre"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "H2O é a fórmula química da água."
+    },
+    {
+        question: "Qual país é famoso pelo sushi?",
+        options: ["China", "Japão", "Coreia", "Tailândia"],
+        correct: 1,
+        category: "cultura",
+        difficulty: 1,
+        explanation: "Sushi é um prato tradicional da culinária japonesa."
+    },
+
+    // -- MÉDIAS (Novas) --
+    {
+        question: "Qual é o rio mais extenso do mundo?",
+        options: ["Nilo", "Amazonas", "Mississipi", "Yangtzé"],
+        correct: 1,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "O Rio Amazonas é considerado o mais extenso, superando o Nilo."
+    },
+    {
+        question: "Quem pintou a Capela Sistina?",
+        options: ["Rafael", "Donatello", "Michelangelo", "Da Vinci"],
+        correct: 2,
+        category: "arte",
+        difficulty: 2,
+        explanation: "Michelangelo levou 4 anos para pintar o teto da capela."
+    },
+    {
+        question: "Quantos ossos tem o corpo humano adulto?",
+        options: ["156", "206", "306", "106"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "Um adulto saudável possui 206 ossos."
+    },
+    {
+        question: "Qual é o símbolo químico do Ouro?",
+        options: ["Au", "Ag", "Fe", "Cu"],
+        correct: 0,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "Vem do latim 'Aurum'."
+    },
+    {
+        question: "Qual banda de rock é liderada por Mick Jagger?",
+        options: ["The Beatles", "Queen", "The Rolling Stones", "U2"],
+        correct: 2,
+        category: "musica",
+        difficulty: 2,
+        explanation: "Os Rolling Stones foram formados em Londres em 1962."
+    },
+    {
+        question: "Quem escreveu 'Romeu e Julieta'?",
+        options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 2,
+        explanation: "Shakespeare escreveu a tragédia no final do século XVI."
+    },
+    {
+        question: "Qual é a capital da Argentina?",
+        options: ["Rosário", "Mendoza", "Buenos Aires", "Córdoba"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "Buenos Aires é a capital e maior cidade argentina."
+    },
+    {
+        question: "Em que ano o Muro de Berlim caiu?",
+        options: ["1987", "1989", "1991", "1993"],
+        correct: 1,
+        category: "historia",
+        difficulty: 2,
+        explanation: "A queda ocorreu em 9 de novembro de 1989."
+    },
+    {
+        question: "Qual é o planeta vermelho?",
+        options: ["Júpiter", "Marte", "Vênus", "Saturno"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "Marte é chamado assim devido ao óxido de ferro em sua superfície."
+    },
+    {
+        question: "Quem é o autor de 'Harry Potter'?",
+        options: ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "Stephen King"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 2,
+        explanation: "J.K. Rowling escreveu os 7 livros da saga principal."
+    },
+    {
+        question: "Qual é a moeda do Reino Unido?",
+        options: ["Euro", "Dólar", "Libra Esterlina", "Franco"],
+        correct: 2,
+        category: "geral",
+        difficulty: 2,
+        explanation: "A Libra Esterlina é uma das moedas mais antigas do mundo."
+    },
+    {
+        question: "Quantos graus tem um círculo?",
+        options: ["180", "90", "360", "100"],
+        correct: 2,
+        category: "matematica",
+        difficulty: 2,
+        explanation: "Uma volta completa corresponde a 360 graus."
+    },
+    {
+        question: "Qual é o órgão responsável por bombear sangue?",
+        options: ["Pulmão", "Fígado", "Coração", "Rim"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "O coração funciona como uma bomba no sistema circulatório."
+    },
+    {
+        question: "Quem foi Mahatma Gandhi?",
+        options: ["Um rei", "Um líder pacifista", "Um guerreiro", "Um cientista"],
+        correct: 1,
+        category: "historia",
+        difficulty: 2,
+        explanation: "Gandhi liderou a independência da Índia através da não-violência."
+    },
+    {
+        question: "Qual é o maior oceano do mundo?",
+        options: ["Atlântico", "Índico", "Pacífico", "Ártico"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "O Oceano Pacífico cobre cerca de 30% da superfície da Terra."
+    },
+    {
+        question: "Qual destes animais é um marsupial?",
+        options: ["Canguru", "Ornitorrinco", "Pinguim", "Urso"],
+        correct: 0,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "Cangurus carregam seus filhotes em uma bolsa chamada marsúpio."
+    },
+    {
+        question: "Em que país surgiram os Jogos Olímpicos?",
+        options: ["Itália", "Grécia", "Egito", "China"],
+        correct: 1,
+        category: "historia",
+        difficulty: 2,
+        explanation: "Os jogos surgiram na Grécia Antiga, na cidade de Olímpia."
+    },
+
+    // -- DIFÍCEIS (Novas) --
+    {
+        question: "Qual é a capital do Canadá?",
+        options: ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+        correct: 3,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "Ottawa foi escolhida pela Rainha Vitória para evitar conflitos entre cidades rivais."
+    },
+    {
+        question: "Quem descobriu a Penicilina?",
+        options: ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Robert Koch"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Fleming descobriu o antibiótico por acaso em 1928."
+    },
+    {
+        question: "Quantos elementos tem a Tabela Periódica atualmente?",
+        options: ["108", "118", "128", "98"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "A tabela possui 118 elementos confirmados."
+    },
+    {
+        question: "Qual guerra durou de 1939 a 1945?",
+        options: ["1ª Guerra Mundial", "Guerra Fria", "2ª Guerra Mundial", "Guerra do Vietnã"],
+        correct: 2,
+        category: "historia",
+        difficulty: 3,
+        explanation: "A Segunda Guerra Mundial foi o conflito mais mortal da história."
+    },
+    {
+        question: "Quem pintou 'O Grito'?",
+        options: ["Van Gogh", "Edvard Munch", "Picasso", "Monet"],
+        correct: 1,
+        category: "arte",
+        difficulty: 3,
+        explanation: "O norueguês Edvard Munch pintou a obra em 1893."
+    },
+    {
+        question: "Qual é o livro sagrado do Islamismo?",
+        options: ["Torá", "Bíblia", "Alcorão", "Vedas"],
+        correct: 2,
+        category: "cultura",
+        difficulty: 3,
+        explanation: "O Alcorão (Quran) contém as revelações de Alá ao profeta Maomé."
+    },
+    {
+        question: "Qual é o país mais populoso do mundo (2024)?",
+        options: ["China", "EUA", "Índia", "Indonésia"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "A Índia ultrapassou a China em população recentemente."
+    },
+    {
+        question: "Quem compôs 'As Quatro Estações'?",
+        options: ["Bach", "Vivaldi", "Beethoven", "Mozart"],
+        correct: 1,
+        category: "musica",
+        difficulty: 3,
+        explanation: "Antonio Vivaldi compôs os famosos concertos para violino."
+    },
+    {
+        question: "Qual é a unidade de medida de força?",
+        options: ["Joule", "Watt", "Newton", "Pascal"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Newton (N) é a unidade de força no Sistema Internacional."
+    },
+    {
+        question: "Onde fica a cidade de Petra?",
+        options: ["Egito", "Israel", "Jordânia", "Turquia"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "Petra é uma cidade histórica e arqueológica na Jordânia."
+    },
+    {
+        question: "Qual o nome do primeiro satélite artificial?",
+        options: ["Apollo 11", "Sputnik 1", "Voyager", "Hubble"],
+        correct: 1,
+        category: "historia",
+        difficulty: 3,
+        explanation: "A União Soviética lançou o Sputnik 1 em 1957."
+    },
+    {
+        question: "Quem formulou a Teoria da Relatividade?",
+        options: ["Newton", "Einstein", "Tesla", "Hawking"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Albert Einstein publicou a teoria no início do século XX."
+    },
+    {
+        question: "Qual é a montanha mais alta do Brasil?",
+        options: ["Pico da Bandeira", "Monte Roraima", "Pico da Neblina", "Pico do Cristal"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "O Pico da Neblina tem 2.995 metros de altitude."
+    },
+    {
+        question: "O que é 'mitocôndria'?",
+        options: ["Cérebro da célula", "Produtora de energia", "Barreira celular", "Material genético"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "É a organela responsável pela respiração celular e energia."
+    },
+    {
+        question: "Quem foi o primeiro homem a viajar no espaço?",
+        options: ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "John Glenn"],
+        correct: 1,
+        category: "historia",
+        difficulty: 3,
+        explanation: "O russo Yuri Gagarin foi ao espaço em 1961."
+    },
+    {
+        question: "Quantas teclas tem um piano padrão?",
+        options: ["66", "77", "88", "99"],
+        correct: 2,
+        category: "musica",
+        difficulty: 3,
+        explanation: "Um piano moderno padrão possui 88 teclas (52 brancas e 36 pretas)."
     }
 ];
 
-// --- Lista de Prêmios (Escada) ---
+// --- Lista de Prêmios (Escada de 1 a 15) ---
 const prizes = [
-    "1 Pão de Queijo",
-    "1 Cafezinho Fresco",
-    "1 Pote de Doce de Leite",
-    "1 Queijo Minas Inteiro",
-    "1 Passagem pra Ouro Preto",
-    "1 Fusca Cheio de Pequi",
-    "1 Sítio na Serra",
-    "1 Milhão de Reais (em barras de ouro)"
+    "1. 1 Pão de Queijo",
+    "2. 1 Cafezinho Fresco",
+    "3. 1 Pote de Doce de Leite",
+    "4. 1 Queijo Minas Inteiro",
+    "5. 1 Passagem pra Ouro Preto",
+    "6. 1 Fusca Cheio de Pequi",
+    "7. 1 Sítio na Serra",
+    "8. 1 Lote em Betim",
+    "9. 1 Franquia de Açaí",
+    "10. 1 Caminhonete Diesel",
+    "11. 1 Apartamento em BH",
+    "12. 1 Mansão na Pampulha",
+    "13. 1 Ilha em Capitólio",
+    "14. Governador do Universo",
+    "15. 1 Milhão de Reais (em ouro)"
 ];
 
 // --- Variáveis de Estado ---
@@ -625,18 +1039,45 @@ const finalPrizeEl = document.getElementById('final-prize');
 // --- Funções Principais ---
 
 function startGame(mode) {
+    let pool = [];
+
+    // 1. Filtrar o banco de perguntas baseado no modo
     if (mode === 'tech') {
-        currentQuestions = allQuestions.filter(q => q.category === 'ti');
+        pool = allQuestions.filter(q => q.category === 'ti');
+        // Se não houver perguntas suficientes de TI, completamos com gerais difíceis
+        if (pool.length < 15) {
+            const extra = allQuestions.filter(q => q.category !== 'ti' && q.difficulty >= 2);
+            pool = pool.concat(extra);
+        }
     } else {
-        // Inclui tudo que não é TI específico, ou TI fácil
-        currentQuestions = allQuestions.filter(q => q.category !== 'ti' || q.difficulty === 1); 
+        // Modo Família (Tudim misturado): Remove TI específico
+        pool = allQuestions.filter(q => q.category !== 'ti');
     }
 
-    // Embaralha todas as perguntas disponíveis
-    currentQuestions = currentQuestions.sort(() => Math.random() - 0.5);
+    // 2. Criar a progressão de dificuldade (5 Fáceis, 5 Médias, 5 Difíceis)
+    // Se não houver exato, pegamos aleatório do que sobrou
+    const easy = pool.filter(q => q.difficulty === 1).sort(() => 0.5 - Math.random());
+    const medium = pool.filter(q => q.difficulty === 2).sort(() => 0.5 - Math.random());
+    const hard = pool.filter(q => q.difficulty === 3).sort(() => 0.5 - Math.random());
+
+    let selectedQuestions = [];
     
-    // Pega apenas a quantidade necessária para os prêmios (8 perguntas)
-    currentQuestions = currentQuestions.slice(0, prizes.length);
+    // Tenta pegar 5 de cada, se não der, completa com o que tem
+    const qEasy = easy.slice(0, 5);
+    const qMedium = medium.slice(0, 5);
+    const qHard = hard.slice(0, 5);
+
+    selectedQuestions = [...qEasy, ...qMedium, ...qHard];
+
+    // Se ainda não deu 15 (caso o filtro tenha falhado), completa com aleatórias restantes
+    if (selectedQuestions.length < 15) {
+        const usedIds = new Set(selectedQuestions.map(q => q.question));
+        const remaining = pool.filter(q => !usedIds.has(q.question)).sort(() => 0.5 - Math.random());
+        selectedQuestions = selectedQuestions.concat(remaining.slice(0, 15 - selectedQuestions.length));
+    }
+    
+    // Corta em 15 caso tenha passado (segurança)
+    currentQuestions = selectedQuestions.slice(0, 15);
 
     currentQuestionIndex = 0;
     isGameActive = true;
@@ -663,7 +1104,10 @@ function loadQuestion() {
     progressFill.style.width = `${progressPercent}%`;
     
     // Atualiza display de prêmio mobile
-    currentPrizeDisplay.textContent = `Valendo: ${prizes[currentQuestionIndex]}`;
+    // prizes[] agora tem strings como "1. Pão de Queijo", removemos o número para ficar bonito no mobile
+    const rawPrize = prizes[currentQuestionIndex];
+    const prizeText = rawPrize.includes('. ') ? rawPrize.split('. ')[1] : rawPrize;
+    currentPrizeDisplay.textContent = `Valendo: ${prizeText}`;
 
     // Limpar container e criar botões dinamicamente para animar entrada
     optionsContainer.innerHTML = '';
@@ -796,7 +1240,9 @@ function endGame(won) {
         finalPrizeEl.textContent = prizes[prizes.length - 1]; 
     } else {
         let prizeIndex = currentQuestionIndex - 1;
-        let prizeName = prizeIndex >= 0 ? prizes[prizeIndex] : "Um aperto de mão";
+        // Pega o texto do prêmio sem o número da frente
+        let rawPrize = prizeIndex >= 0 ? prizes[prizeIndex] : "Um aperto de mão";
+        let prizeName = rawPrize.includes('. ') ? rawPrize.split('. ')[1] : rawPrize;
         
         endIcon.textContent = "💔";
         endTitle.textContent = "Não foi dessa vez";
@@ -827,7 +1273,7 @@ function renderPrizeList() {
     [...prizes].forEach((prize, index) => {
         const li = document.createElement('li');
         li.className = 'prize-item';
-        li.textContent = `${index + 1}. ${prize}`;
+        li.textContent = prize; // Já inclui o número agora
         li.dataset.index = index;
         prizeListEl.prepend(li);
     });

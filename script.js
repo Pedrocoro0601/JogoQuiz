@@ -99,7 +99,7 @@ const allQuestions = [
         explanation: "O Marechal Deodoro da Fonseca proclamou a república e foi o primeiro presidente em 1889."
     },
     
-    // --- TI / Programação ---
+    // --- TI / Programação (Originais) ---
     {
         question: "O que significa HTML?",
         options: ["HyperText Markup Language", "HighText Machine Language", "HyperTool Multi Layer", "Home Tool Markup Language"],
@@ -572,7 +572,7 @@ const allQuestions = [
         explanation: "Um icosaedro regular possui 20 faces triangulares."
     },
 
-    // --- NOVAS 50 PERGUNTAS ADICIONADAS ---
+    // --- NOVAS 50 PERGUNTAS ADICIONADAS ANTERIORMENTE ---
     
     // -- FÁCEIS (Novas) --
     {
@@ -978,6 +978,820 @@ const allQuestions = [
         category: "musica",
         difficulty: 3,
         explanation: "Um piano moderno padrão possui 88 teclas (52 brancas e 36 pretas)."
+    },
+
+    // --- NOVOS LOTES (50 TI + 50 MISTAS) ---
+    
+    // TI - FÁCIL
+    {
+        question: "Qual destas é uma marca de placa de vídeo?",
+        options: ["NVIDIA", "Adidas", "Nestlé", "Honda"],
+        correct: 0,
+        category: "ti",
+        difficulty: 1,
+        explanation: "NVIDIA é famosa por suas GPUs GeForce."
+    },
+    {
+        question: "O que significa 'PC'?",
+        options: ["Para Casa", "Personal Computer", "Private Center", "Processador Central"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Sigla em inglês para Computador Pessoal."
+    },
+    {
+        question: "Qual sistema operacional é representado por um pinguim?",
+        options: ["Windows", "macOS", "Linux", "Android"],
+        correct: 2,
+        category: "ti",
+        difficulty: 1,
+        explanation: "O mascote do kernel Linux é o pinguim Tux."
+    },
+    {
+        question: "Qual tecla geralmente recarrega a página no navegador?",
+        options: ["F1", "F5", "F12", "Esc"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "F5 é o atalho padrão para 'Refresh' na maioria dos navegadores."
+    },
+    {
+        question: "O que é um 'Mouse'?",
+        options: ["Um monitor", "Um dispositivo de entrada", "Um tipo de cabo", "Um software"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "O mouse permite interagir com a interface gráfica do computador."
+    },
+    {
+        question: "Qual empresa criou o Windows?",
+        options: ["Apple", "Microsoft", "Google", "IBM"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "A Microsoft lançou a primeira versão do Windows em 1985."
+    },
+    {
+        question: "O que é 'Wi-Fi'?",
+        options: ["Conexão com fio", "Rede sem fio", "Marca de computador", "Tipo de vírus"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Tecnologia de rede local sem fios baseada no padrão IEEE 802.11."
+    },
+    {
+        question: "Para que serve o comando 'Ctrl + C'?",
+        options: ["Colar", "Cortar", "Copiar", "Cancelar"],
+        correct: 2,
+        category: "ti",
+        difficulty: 1,
+        explanation: "É o atalho universal para copiar o item selecionado."
+    },
+    {
+        question: "Qual a extensão comum de um arquivo de texto simples?",
+        options: [".exe", ".txt", ".jpg", ".mp3"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: ".txt indica um arquivo de texto sem formatação."
+    },
+    {
+        question: "O que é um 'Bug'?",
+        options: ["Um recurso novo", "Um erro no código", "Um tipo de monitor", "Uma senha"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Bug é o termo usado para falhas ou defeitos em software."
+    },
+    {
+        question: "Qual linguagem usa a tag <body>?",
+        options: ["Python", "C++", "HTML", "SQL"],
+        correct: 2,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Em HTML, <body> delimita o conteúdo visível da página."
+    },
+    {
+        question: "O que significa 'www'?",
+        options: ["World Wide Web", "Web World Wide", "Wide Web World", "World Web Wide"],
+        correct: 0,
+        category: "ti",
+        difficulty: 1,
+        explanation: "A 'Rede Mundial de Computadores' criada por Tim Berners-Lee."
+    },
+    {
+        question: "Qual destes é um navegador de internet?",
+        options: ["Photoshop", "Chrome", "Excel", "Word"],
+        correct: 1,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Google Chrome é um dos navegadores mais populares."
+    },
+    {
+        question: "O que é 'PDF'?",
+        options: ["Formato de documento", "Peça de computador", "Linguagem de código", "Protocolo de rede"],
+        correct: 0,
+        category: "ti",
+        difficulty: 1,
+        explanation: "Portable Document Format, criado pela Adobe."
+    },
+    {
+        question: "Qual dispositivo armazena dados permanentemente?",
+        options: ["RAM", "Processador", "HD/SSD", "Monitor"],
+        correct: 2,
+        category: "ti",
+        difficulty: 1,
+        explanation: "O Disco Rígido (HD) ou SSD guarda seus arquivos mesmo desligado."
+    },
+
+    // TI - MÉDIO
+    {
+        question: "O que significa CSS?",
+        options: ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style System", "Colorful Style Sheets"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Folhas de Estilo em Cascata definem a aparência de páginas web."
+    },
+    {
+        question: "Qual o comando para listar arquivos no Linux?",
+        options: ["dir", "list", "ls", "show"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "'ls' (list segments) lista o conteúdo de diretórios no Unix/Linux."
+    },
+    {
+        question: "O que é SQL?",
+        options: ["Structured Query Language", "Simple Question Language", "System Query Logic", "Style Query Layer"],
+        correct: 0,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Linguagem padrão para gerenciar bancos de dados relacionais."
+    },
+    {
+        question: "Qual porta padrão do protocolo HTTP?",
+        options: ["21", "80", "443", "8080"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "A porta 80 é usada para tráfego web não criptografado."
+    },
+    {
+        question: "O que significa a sigla API?",
+        options: ["Application Programming Interface", "Advanced Program Internet", "Applied Protocol Interface", "Automated Process Input"],
+        correct: 0,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Interface que permite a comunicação entre diferentes softwares."
+    },
+    {
+        question: "Em Python, como se imprime algo na tela?",
+        options: ["echo()", "console.log()", "print()", "System.out.println()"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "A função print() exibe a saída no console Python."
+    },
+    {
+        question: "Qual destes é um banco de dados NoSQL?",
+        options: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "MongoDB é um banco orientado a documentos, não relacional."
+    },
+    {
+        question: "O que é um endereço IP?",
+        options: ["Identidade Pessoal", "Internet Protocol", "Internal Process", "Input Port"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "É o identificador numérico de um dispositivo em uma rede."
+    },
+    {
+        question: "Qual a função do DNS?",
+        options: ["Proteger contra vírus", "Traduzir domínios para IPs", "Acelerar a internet", "Gerar senhas"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "O Domain Name System converte 'google.com' em '142.250.x.x'."
+    },
+    {
+        question: "O que é 'Open Source'?",
+        options: ["Código fechado", "Código pago", "Código aberto", "Sem código"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Software cujo código-fonte é disponibilizado para uso e modificação."
+    },
+    {
+        question: "Qual destes é um framework Java?",
+        options: ["Django", "Spring", "Laravel", "React"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Spring é um framework popular para desenvolvimento em Java."
+    },
+    {
+        question: "O que faz o 'git clone'?",
+        options: ["Cria um repositório", "Copia um repositório", "Deleta um repositório", "Atualiza um repositório"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Baixa uma cópia completa de um repositório remoto."
+    },
+    {
+        question: "O que é um algoritmo?",
+        options: ["Um robô", "Uma peça de hardware", "Uma sequência de instruções", "Um erro de rede"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "É um passo a passo lógico para resolver um problema."
+    },
+    {
+        question: "Qual camada do modelo OSI trata do roteamento?",
+        options: ["Física", "Enlace", "Rede", "Aplicação"],
+        correct: 2,
+        category: "ti",
+        difficulty: 2,
+        explanation: "A Camada de Rede (Layer 3) cuida do endereçamento e roteamento (IP)."
+    },
+    {
+        question: "O que é um 'Full Stack Developer'?",
+        options: ["Dev só de Banco de Dados", "Dev Front e Back-end", "Dev só de Design", "Gerente de Projetos"],
+        correct: 1,
+        category: "ti",
+        difficulty: 2,
+        explanation: "Alguém que trabalha tanto no cliente (front) quanto no servidor (back)."
+    },
+
+    // TI - DIFÍCIL
+    {
+        question: "Qual a complexidade de tempo de busca em uma tabela hash ideal?",
+        options: ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+        correct: 2,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Em média, o acesso é direto e constante, O(1)."
+    },
+    {
+        question: "O que é 'Hoisting' em JavaScript?",
+        options: ["Elevação de declarações", "Compactação de código", "Um tipo de loop", "Erro de sintaxe"],
+        correct: 0,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Comportamento onde declarações de variáveis e funções são movidas para o topo."
+    },
+    {
+        question: "Qual destes padrões de projeto é Criacional?",
+        options: ["Observer", "Singleton", "Strategy", "Decorator"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Singleton garante que uma classe tenha apenas uma instância."
+    },
+    {
+        question: "O que é um ataque DDOS?",
+        options: ["Roubo de senha", "Negação de Serviço Distribuída", "Injeção de SQL", "Phishing de e-mail"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Múltiplos sistemas inundam um alvo para torná-lo indisponível."
+    },
+    {
+        question: "Qual o princípio 'L' do SOLID?",
+        options: ["Liskov Substitution", "Lazy Loading", "Loop Invariant", "Linear Search"],
+        correct: 0,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Princípio da Substituição de Liskov: subclasses devem ser substituíveis por suas superclasses."
+    },
+    {
+        question: "O que é Docker?",
+        options: ["Um editor de texto", "Plataforma de containerização", "Uma linguagem", "Um sistema operacional"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Docker permite empacotar aplicações e dependências em containers leves."
+    },
+    {
+        question: "Em Redes, o que é o protocolo TCP?",
+        options: ["Protocolo não confiável", "Protocolo orientado a conexão", "Protocolo de e-mail", "Protocolo de vídeo"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Transmission Control Protocol garante a entrega ordenada e verificada de dados."
+    },
+    {
+        question: "O que é 'Deadlock'?",
+        options: ["Tela azul", "Bloqueio mútuo de processos", "Memória cheia", "Erro de disco"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Situação onde dois processos esperam um pelo outro, travando o sistema."
+    },
+    {
+        question: "Qual destes NÃO é um método HTTP?",
+        options: ["GET", "POST", "FETCH", "DELETE"],
+        correct: 2,
+        category: "ti",
+        difficulty: 3,
+        explanation: "FETCH é uma API do JavaScript, não um método do protocolo HTTP (como PUT, PATCH)."
+    },
+    {
+        question: "O que é 'Polimorfismo' em OOP?",
+        options: ["Muitas formas", "Herança múltipla", "Encapsulamento", "Abstração"],
+        correct: 0,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Capacidade de objetos de diferentes classes responderem à mesma mensagem de formas distintas."
+    },
+    {
+        question: "Qual a diferença entre '==' e '===' em JS?",
+        options: ["Nenhuma", "Valor vs Valor e Tipo", "Velocidade", "Compatibilidade"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "'===' verifica também o tipo da variável, evitando coerção automática."
+    },
+    {
+        question: "O que é 'Big O Notation'?",
+        options: ["Um logotipo", "Análise de performance de algoritmos", "Tamanho do HD", "Versão do Java"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Descreve como o tempo de execução ou espaço cresce com o tamanho da entrada."
+    },
+    {
+        question: "Qual é a porta padrão para HTTPS?",
+        options: ["80", "443", "22", "21"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "443 é a porta designada para tráfego web seguro (TLS/SSL)."
+    },
+    {
+        question: "O que é 'ORM'?",
+        options: ["Object-Relational Mapping", "Operational Resource Management", "Optimal Route Mode", "Only Read Memory"],
+        correct: 0,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Técnica para converter dados entre sistemas de tipos incompatíveis (Objeto <-> SQL)."
+    },
+    {
+        question: "O que é 'Race Condition'?",
+        options: ["Competição de velocidade", "Condição de corrida em concorrência", "Teste de performance", "Erro de compilação"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Falha onde o resultado depende da sequência incontrolável de eventos (threads)."
+    },
+    {
+        question: "Qual a função do 'chmod 777'?",
+        options: ["Apagar tudo", "Permissão total para todos", "Bloquear arquivo", "Copiar arquivo"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Dá permissão de Leitura, Escrita e Execução para Dono, Grupo e Outros."
+    },
+    {
+        question: "O que é JWT?",
+        options: ["Java Web Tools", "JSON Web Token", "JavaScript With Types", "Joint Web Team"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Padrão para criar tokens de acesso baseados em JSON, usado em autenticação."
+    },
+    {
+        question: "O que é 'Refactoring'?",
+        options: ["Reescrever do zero", "Melhorar código sem mudar comportamento", "Corrigir bugs", "Adicionar features"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Alterar a estrutura interna do código para torná-lo mais limpo, sem mudar sua função externa."
+    },
+    {
+        question: "O que é Kubernetes?",
+        options: ["Um Linux", "Orquestrador de containers", "Banco de dados", "Linguagem de script"],
+        correct: 1,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Sistema open-source para automatizar implantação e gestão de aplicações em containers."
+    },
+    {
+        question: "O que é CAP Theorem?",
+        options: ["Consistency, Availability, Partition tolerance", "Computer, App, Program", "Code And Process", "Central Access Point"],
+        correct: 0,
+        category: "ti",
+        difficulty: 3,
+        explanation: "Diz que um sistema distribuído não pode garantir Consistência, Disponibilidade e Tolerância a Partição simultaneamente."
+    },
+
+    // FAMÍLIA/MISTA - FÁCIL
+    {
+        question: "Quantos dias tem uma semana?",
+        options: ["5", "6", "7", "8"],
+        correct: 2,
+        category: "geral",
+        difficulty: 1,
+        explanation: "A semana vai de domingo a sábado, totalizando 7 dias."
+    },
+    {
+        question: "Qual cor é o cavalo branco de Napoleão?",
+        options: ["Marrom", "Preto", "Branco", "Cinza"],
+        correct: 2,
+        category: "geral",
+        difficulty: 1,
+        explanation: "É uma pegadinha clássica: se é branco, a cor é branca."
+    },
+    {
+        question: "O que a vaca bebe?",
+        options: ["Leite", "Água", "Suco", "Refrigerante"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "Vacas adultas bebem água; bezerros bebem leite."
+    },
+    {
+        question: "Qual é o oposto de 'Noite'?",
+        options: ["Tarde", "Dia", "Madrugada", "Crepúsculo"],
+        correct: 1,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O ciclo diário é dividido principalmente em Dia e Noite."
+    },
+    {
+        question: "Quantos dedos temos em uma mão?",
+        options: ["4", "5", "6", "10"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "O ser humano padrão possui 5 dedos em cada mão."
+    },
+    {
+        question: "Qual é o nome do Mickey Mouse no Brasil?",
+        options: ["Rato Geraldo", "Mickey", "Ratinho", "Miguel"],
+        correct: 1,
+        category: "cultura",
+        difficulty: 1,
+        explanation: "O nome original foi mantido no Brasil."
+    },
+    {
+        question: "Onde o peixe vive?",
+        options: ["Na terra", "No ar", "Na água", "No fogo"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "Peixes são animais aquáticos."
+    },
+    {
+        question: "Qual a cor da banana madura?",
+        options: ["Azul", "Roxa", "Amarela", "Rosa"],
+        correct: 2,
+        category: "geral",
+        difficulty: 1,
+        explanation: "A banana fica amarela quando está pronta para consumo."
+    },
+    {
+        question: "Quanto é 2 + 2?",
+        options: ["3", "4", "5", "22"],
+        correct: 1,
+        category: "matematica",
+        difficulty: 1,
+        explanation: "Soma básica."
+    },
+    {
+        question: "Qual destes é um animal doméstico?",
+        options: ["Leão", "Tigre", "Cachorro", "Urso"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "Cães foram domesticados há milhares de anos."
+    },
+    {
+        question: "O que usamos para escrever no quadro negro?",
+        options: ["Caneta", "Giz", "Lápis", "Pincel"],
+        correct: 1,
+        category: "geral",
+        difficulty: 1,
+        explanation: "O giz branco é usado tradicionalmente em lousas negras ou verdes."
+    },
+    {
+        question: "Qual a estação das flores?",
+        options: ["Verão", "Inverno", "Outono", "Primavera"],
+        correct: 3,
+        category: "ciencias",
+        difficulty: 1,
+        explanation: "A Primavera é associada ao reflorescimento da flora."
+    },
+    {
+        question: "Quem é a namorada do Mickey?",
+        options: ["Margarida", "Minnie", "Clarabela", "Branca de Neve"],
+        correct: 1,
+        category: "cultura",
+        difficulty: 1,
+        explanation: "Minnie Mouse é a eterna companheira do Mickey."
+    },
+    {
+        question: "O que o bombeiro apaga?",
+        options: ["Luz", "Fogo", "Memória", "Dívida"],
+        correct: 1,
+        category: "geral",
+        difficulty: 1,
+        explanation: "A principal função é o combate a incêndios."
+    },
+    {
+        question: "Qual veículo anda sobre trilhos?",
+        options: ["Carro", "Trem", "Avião", "Barco"],
+        correct: 1,
+        category: "geral",
+        difficulty: 1,
+        explanation: "Trens e metrôs locomovem-se via ferrovias."
+    },
+
+    // FAMÍLIA/MISTA - MÉDIO
+    {
+        question: "Qual país tem o formato de uma bota?",
+        options: ["Espanha", "Portugal", "Itália", "Grécia"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "A península itálica tem um formato característico de bota."
+    },
+    {
+        question: "Quem escreveu 'O Sítio do Picapau Amarelo'?",
+        options: ["Ziraldo", "Monteiro Lobato", "Ruth Rocha", "Machado de Assis"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 2,
+        explanation: "Monteiro Lobato é o pai da literatura infantil brasileira."
+    },
+    {
+        question: "Qual é o maior estado do Brasil?",
+        options: ["Minas Gerais", "São Paulo", "Amazonas", "Pará"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "O Amazonas é o maior em extensão territorial."
+    },
+    {
+        question: "Quantos anéis tem a bandeira olímpica?",
+        options: ["4", "5", "6", "7"],
+        correct: 1,
+        category: "esportes",
+        difficulty: 2,
+        explanation: "São 5 anéis entrelaçados representando os continentes habitados."
+    },
+    {
+        question: "Qual é a capital da Bahia?",
+        options: ["Recife", "Fortaleza", "Salvador", "Maceió"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "Salvador foi a primeira capital do Brasil."
+    },
+    {
+        question: "Quem pintou o teto da Capela Sistina?",
+        options: ["Da Vinci", "Michelangelo", "Rafael", "Donatello"],
+        correct: 1,
+        category: "arte",
+        difficulty: 2,
+        explanation: "Michelangelo, o gênio renascentista."
+    },
+    {
+        question: "Qual é o animal mais rápido do mundo?",
+        options: ["Leão", "Guepardo", "Cavalo", "Águia"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "O Guepardo (Cheetah) pode passar de 100km/h em terra."
+    },
+    {
+        question: "De quem é a frase 'Penso, logo existo'?",
+        options: ["Sócrates", "Platão", "Descartes", "Nietzsche"],
+        correct: 2,
+        category: "historia",
+        difficulty: 2,
+        explanation: "René Descartes, filósofo francês (Cogito, ergo sum)."
+    },
+    {
+        question: "Qual a capital dos Estados Unidos?",
+        options: ["Nova York", "Los Angeles", "Washington D.C.", "Miami"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "A capital política é Washington, D.C., não NY."
+    },
+    {
+        question: "O que é um 'Haicai'?",
+        options: ["Comida japonesa", "Poema japonês", "Arte marcial", "Roupa típica"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 2,
+        explanation: "Forma de poesia japonesa curta, geralmente com 3 versos."
+    },
+    {
+        question: "Qual a moeda do Japão?",
+        options: ["Yuan", "Won", "Iene", "Dólar"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "O Iene (JPY) é a moeda oficial japonesa."
+    },
+    {
+        question: "Quantos jogadores tem um time de vôlei em quadra?",
+        options: ["5", "6", "7", "12"],
+        correct: 1,
+        category: "esportes",
+        difficulty: 2,
+        explanation: "São 6 jogadores titulares de cada lado."
+    },
+    {
+        question: "O que a Cinderela perdeu na escada?",
+        options: ["O brinco", "A bolsa", "O sapatinho de cristal", "A coroa"],
+        correct: 2,
+        category: "filmes",
+        difficulty: 2,
+        explanation: "Ela perdeu o sapatinho ao fugir antes da meia-noite."
+    },
+    {
+        question: "Qual o nome do navio que afundou em 1912?",
+        options: ["Titanic", "Britannic", "Olympic", "Santa Maria"],
+        correct: 0,
+        category: "historia",
+        difficulty: 2,
+        explanation: "O RMS Titanic afundou em sua viagem inaugural."
+    },
+    {
+        question: "Quem é a 'Rainha dos Baixinhos'?",
+        options: ["Angélica", "Eliana", "Xuxa", "Mara Maravilha"],
+        correct: 2,
+        category: "cultura",
+        difficulty: 2,
+        explanation: "Xuxa Meneghel recebeu esse título por seu sucesso com crianças."
+    },
+    {
+        question: "Qual é o gás que respiramos para viver?",
+        options: ["Hélio", "Nitrogênio", "Oxigênio", "Carbono"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 2,
+        explanation: "O Oxigênio é essencial para a respiração celular."
+    },
+    {
+        question: "Qual a capital da Espanha?",
+        options: ["Barcelona", "Sevilha", "Madri", "Valência"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 2,
+        explanation: "Madri é a capital e centro político da Espanha."
+    },
+
+    // FAMÍLIA/MISTA - DIFÍCIL
+    {
+        question: "Qual a montanha mais alta do Brasil?",
+        options: ["Pico da Bandeira", "Pico da Neblina", "Monte Roraima", "Pico 31 de Março"],
+        correct: 1,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "O Pico da Neblina tem 2.995m e fica no Amazonas."
+    },
+    {
+        question: "Quem escreveu 'O Grande Gatsby'?",
+        options: ["Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain", "Steinbeck"],
+        correct: 1,
+        category: "literatura",
+        difficulty: 3,
+        explanation: "Fitzgerald retratou a Era do Jazz nos EUA."
+    },
+    {
+        question: "Qual elemento químico é 'Ag'?",
+        options: ["Ouro", "Prata", "Argônio", "Alumínio"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Do latim 'Argentum'."
+    },
+    {
+        question: "Em que ano o homem foi à Lua?",
+        options: ["1959", "1968", "1969", "1970"],
+        correct: 2,
+        category: "historia",
+        difficulty: 3,
+        explanation: "A Apollo 11 pousou em 20 de julho de 1969."
+    },
+    {
+        question: "Qual a capital da Nova Zelândia?",
+        options: ["Auckland", "Wellington", "Christchurch", "Queenstown"],
+        correct: 1,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "Wellington é a capital mais ao sul do mundo."
+    },
+    {
+        question: "Quem compôs 'O Lago dos Cisnes'?",
+        options: ["Bach", "Mozart", "Tchaikovsky", "Beethoven"],
+        correct: 2,
+        category: "arte",
+        difficulty: 3,
+        explanation: "Piotr Ilitch Tchaikovsky, compositor russo."
+    },
+    {
+        question: "Qual guerra durou 30 anos?",
+        options: ["Guerra dos Cem Anos", "Guerra das Rosas", "Guerra dos Trinta Anos", "Guerra Fria"],
+        correct: 2,
+        category: "historia",
+        difficulty: 3,
+        explanation: "Conflito religioso e político na Europa (1618-1648)."
+    },
+    {
+        question: "Quantas teclas tem um piano clássico?",
+        options: ["55", "66", "77", "88"],
+        correct: 3,
+        category: "musica",
+        difficulty: 3,
+        explanation: "São 52 brancas e 36 pretas."
+    },
+    {
+        question: "Onde fica Machu Picchu?",
+        options: ["Chile", "Colômbia", "Bolívia", "Peru"],
+        correct: 3,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "A cidade perdida dos Incas fica nos Andes peruanos."
+    },
+    {
+        question: "Quem descobriu a radioatividade?",
+        options: ["Einstein", "Newton", "Marie Curie", "Darwin"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Marie Curie foi pioneira e ganhou dois prêmios Nobel."
+    },
+    {
+        question: "Qual o maior deserto quente do mundo?",
+        options: ["Gobi", "Kalahari", "Saara", "Atacama"],
+        correct: 2,
+        category: "geografia",
+        difficulty: 3,
+        explanation: "O Saara é o maior quente (a Antártida é o maior deserto no geral)."
+    },
+    {
+        question: "Quem pintou 'A Última Ceia'?",
+        options: ["Michelangelo", "Da Vinci", "Donatello", "Rafael"],
+        correct: 1,
+        category: "arte",
+        difficulty: 3,
+        explanation: "Leonardo da Vinci pintou o mural em Milão."
+    },
+    {
+        question: "Qual a estrela mais próxima da Terra (depois do Sol)?",
+        options: ["Sirius", "Alpha Centauri", "Proxima Centauri", "Betelgeuse"],
+        correct: 2,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "Proxima Centauri está a cerca de 4.2 anos-luz."
+    },
+    {
+        question: "Em que país nasceu Hitler?",
+        options: ["Alemanha", "Polônia", "Áustria", "Hungria"],
+        correct: 2,
+        category: "historia",
+        difficulty: 3,
+        explanation: "Adolf Hitler nasceu em Braunau am Inn, Áustria."
+    },
+    {
+        question: "Qual o idioma mais falado no mundo (nativos)?",
+        options: ["Inglês", "Espanhol", "Mandarim", "Hindi"],
+        correct: 2,
+        category: "cultura",
+        difficulty: 3,
+        explanation: "O Mandarim (Chinês) tem o maior número de falantes nativos."
+    },
+    {
+        question: "O que estuda a Ictiologia?",
+        options: ["Aves", "Peixes", "Insetos", "Fosseis"],
+        correct: 1,
+        category: "ciencias",
+        difficulty: 3,
+        explanation: "É o ramo da zoologia dedicado ao estudo dos peixes."
+    },
+    {
+        question: "Quem foi o primeiro homem a orbitar a Terra?",
+        options: ["Neil Armstrong", "John Glenn", "Yuri Gagarin", "Laika"],
+        correct: 2,
+        category: "historia",
+        difficulty: 3,
+        explanation: "O cosmonauta soviético Yuri Gagarin, em 1961."
+    },
+    {
+        question: "Qual o nome da espada do Rei Arthur?",
+        options: ["Anduril", "Excalibur", "Ferroada", "Glamdring"],
+        correct: 1,
+        category: "mitologia",
+        difficulty: 3,
+        explanation: "Excalibur é a espada lendária da lenda arturiana."
     }
 ];
 
@@ -1004,7 +1818,6 @@ const prizes = [
 let currentQuestions = [];
 let currentQuestionIndex = 0;
 let isGameActive = false;
-let lifelineUsed = false;
 let hasWon = false;
 
 // --- Elementos do DOM ---
@@ -1019,7 +1832,6 @@ const optionsContainer = document.getElementById('options-container');
 const categoryBadge = document.getElementById('category-badge');
 const prizeListEl = document.getElementById('prize-list');
 const currentPrizeDisplay = document.getElementById('current-prize-display');
-const btn5050 = document.getElementById('btn-5050');
 
 // Novos Elementos de Progresso
 const currentLevelAnim = document.getElementById('current-level-anim');
@@ -1081,9 +1893,7 @@ function startGame(mode) {
 
     currentQuestionIndex = 0;
     isGameActive = true;
-    lifelineUsed = false;
     hasWon = false;
-    btn5050.disabled = false;
     
     renderPrizeList();
     
@@ -1106,9 +1916,6 @@ function loadQuestion() {
     currentLevelAnim.classList.add('level-pop');
 
     // Atualizar Barra de Progresso
-    // Calculamos baseado no início da questão. Questão 1 = 1/15 já preenchido visualmente para dar incentivo?
-    // Ou melhor: Começa vazio e enche conforme acerta?
-    // Vamos fazer: enche proporcionalmente ao número da questão atual
     const progressPercent = ((currentQuestionIndex + 1) / 15) * 100;
     progressFill.style.width = `${progressPercent}%`;
     
@@ -1215,24 +2022,6 @@ function nextQuestion() {
         currentQuestionIndex++;
         loadQuestion();
     }
-}
-
-function useLifeline5050() {
-    if (lifelineUsed || !isGameActive) return;
-
-    const q = currentQuestions[currentQuestionIndex];
-    const correctIndex = q.correct;
-    const buttons = optionsContainer.querySelectorAll('.btn-option');
-    
-    let wrongIndices = [0, 1, 2, 3].filter(i => i !== correctIndex);
-    wrongIndices = wrongIndices.sort(() => Math.random() - 0.5).slice(0, 2);
-
-    wrongIndices.forEach(index => {
-        buttons[index].classList.add('hidden');
-    });
-
-    lifelineUsed = true;
-    btn5050.disabled = true;
 }
 
 function endGame(won) {

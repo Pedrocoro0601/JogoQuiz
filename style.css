@@ -52,7 +52,7 @@ body {
     display: none;
     flex: 1;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px; /* Reduzido padding mobile */
     animation: fadeScreen 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     width: 100%;
 }
@@ -82,23 +82,16 @@ body {
 
 #start-screen h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Ajustado para mobile */
     color: var(--primary-color);
     margin-bottom: 5px;
-}
-
-#start-screen h2 {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .intro-text {
     margin-top: 15px;
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1rem;
+    padding: 0 10px;
 }
 
 .start-footer {
@@ -192,7 +185,7 @@ body {
 
 .game-header {
     background: var(--white);
-    padding: 15px 20px;
+    padding: 12px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -244,14 +237,14 @@ body {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Levemente menor para caber melhor no mobile */
 }
 
 .game-layout {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
     max-width: 100%;
 }
 
@@ -270,11 +263,11 @@ body {
 
 .question-card {
     background: var(--white);
-    padding: 25px;
+    padding: 20px; /* Reduzido padding */
     border-radius: var(--border-radius);
     box-shadow: 0 8px 0 rgba(0,0,0,0.05);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 1px solid #f0f0f0;
     animation: slideDown 0.5s ease;
 }
@@ -284,7 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -292,11 +285,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .level-label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--text-muted);
     letter-spacing: 1px;
@@ -309,7 +302,7 @@ body {
 
 #current-level-anim {
     font-family: 'Roboto Slab', serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: var(--accent-color);
     font-weight: 800;
     line-height: 1;
@@ -321,7 +314,7 @@ body {
 }
 
 .level-total {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #bdbdbd;
     margin-left: 2px;
     font-weight: 600;
@@ -329,7 +322,7 @@ body {
 
 .progress-track {
     width: 100%;
-    height: 12px;
+    height: 10px;
     background: #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
@@ -343,7 +336,6 @@ body {
     transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 10px;
     position: relative;
-    /* Efeito de listras animadas */
     background-size: 20px 20px;
     background-image: linear-gradient(
         45deg,
@@ -371,7 +363,7 @@ body {
 
 #question-text {
     font-family: 'Roboto Slab', serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Levemente menor para não ocupar toda a tela no mobile */
     line-height: 1.4;
     color: var(--text-main);
 }
@@ -380,23 +372,24 @@ body {
 .options-grid {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    margin-bottom: 20px; /* Espaço inferior para garantir scroll */
 }
 
 .btn-option {
     background: var(--white);
     border: 2px solid #e0e0e0;
     border-bottom-width: 6px; /* Efeito 3D */
-    padding: 15px 20px;
+    padding: 14px 16px;
     border-radius: 16px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-main);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     font-weight: 600;
     position: relative;
     opacity: 0; /* Para animação de entrada */
@@ -417,13 +410,13 @@ body {
 .opt-letter {
     background: #f5f5f5;
     color: var(--text-muted);
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    font-size: 0.9rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
     font-weight: 700;
     flex-shrink: 0;
     box-shadow: inset 0 -2px 0 rgba(0,0,0,0.1);
@@ -434,7 +427,7 @@ body {
     background: #e8f5e9;
     border-color: var(--success);
     color: var(--primary-dark);
-    border-bottom-color: #2e7d32; /* Sombra verde escura */
+    border-bottom-color: #2e7d32;
 }
 .btn-option.correct .opt-letter {
     background: var(--success);
@@ -446,7 +439,7 @@ body {
     background: #ffebee;
     border-color: var(--error);
     color: #c62828;
-    border-bottom-color: #b71c1c; /* Sombra vermelha escura */
+    border-bottom-color: #b71c1c;
 }
 .btn-option.wrong .opt-letter {
     background: var(--error);
@@ -454,39 +447,8 @@ body {
     box-shadow: none;
 }
 
-.btn-option.hidden {
-    opacity: 0 !important;
-    pointer-events: none;
-    transform: scale(0.9);
-}
-
 .lifelines-area {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.btn-lifeline {
-    background: var(--white);
-    border: 2px solid var(--accent-color);
-    color: #f57f17;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 10px rgba(249, 168, 37, 0.2);
-    transition: transform 0.2s;
-}
-.btn-lifeline:hover {
-    transform: scale(1.05);
-    background: #fffde7;
-}
-.btn-lifeline:disabled {
-    opacity: 0.5;
-    filter: grayscale(1);
-    cursor: not-allowed;
-    transform: none;
+    display: none; /* Removido botão de ajuda */
 }
 
 /* Overlays e Modais */
@@ -548,32 +510,34 @@ body {
     width: 100%;
     max-width: 400px;
     border-radius: 24px;
-    padding: 30px 20px;
+    padding: 25px 20px;
     text-align: center;
     box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-height: 90vh; /* Evita que saia da tela */
+    overflow-y: auto;
 }
 
 .feedback-icon {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
     animation: bounceIn 0.6s;
 }
 
 #feedback-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
     color: var(--text-main);
 }
 
 .feedback-content {
     background: #f5f5f5;
-    padding: 20px;
+    padding: 15px;
     border-radius: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: left;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
     color: #424242;
     border: 1px solid #e0e0e0;
 }
@@ -595,7 +559,7 @@ body {
 
 .result-box {
     background: var(--white);
-    padding: 40px 30px;
+    padding: 30px 20px;
     border-radius: 24px;
     box-shadow: var(--shadow-lg);
     text-align: center;
@@ -603,25 +567,25 @@ body {
 }
 
 .result-icon { 
-    font-size: 5rem; 
-    margin-bottom: 20px; 
+    font-size: 4rem; 
+    margin-bottom: 15px; 
     display: inline-block;
     animation: float 3s ease-in-out infinite;
 }
 
-#end-title { color: var(--primary-color); font-size: 2rem; margin-bottom: 10px; }
+#end-title { color: var(--primary-color); font-size: 1.8rem; margin-bottom: 10px; }
 
 .score-card {
     background: #fff8e1;
     border: 2px dashed var(--accent-color);
-    padding: 20px;
+    padding: 15px;
     border-radius: 16px;
-    margin: 25px 0;
+    margin: 20px 0;
     transform: rotate(-1deg);
 }
 
-.score-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
-#final-prize { color: var(--secondary-color); font-size: 1.5rem; margin-top: 5px; }
+.score-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
+#final-prize { color: var(--secondary-color); font-size: 1.3rem; margin-top: 5px; }
 
 /* Desktop Enhancements */
 @media (min-width: 900px) {
@@ -635,7 +599,7 @@ body {
         overflow: hidden;
     }
     
-    .screen { height: 100%; justify-content: center; }
+    .screen { height: 100%; justify-content: center; padding: 30px; }
 
     .game-layout {
         flex-direction: row;
@@ -689,6 +653,10 @@ body {
     .options-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #question-text {
+        font-size: 1.4rem;
     }
 }
 

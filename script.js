@@ -1019,9 +1019,10 @@ const optionsContainer = document.getElementById('options-container');
 const categoryBadge = document.getElementById('category-badge');
 const prizeListEl = document.getElementById('prize-list');
 const currentPrizeDisplay = document.getElementById('current-prize-display');
-const currentQNum = document.getElementById('current-question-num');
-const totalQNum = document.getElementById('total-questions');
 const btn5050 = document.getElementById('btn-5050');
+
+// Novos Elementos de Progresso
+const currentLevelAnim = document.getElementById('current-level-anim');
 const progressFill = document.getElementById('progress-fill');
 
 // Feedback Elements
@@ -1050,12 +1051,11 @@ function startGame(mode) {
             pool = pool.concat(extra);
         }
     } else {
-        // Modo Família (Tudim misturado): Remove TI específico
+        // Modo Família (Tudim misturado): REMOVE TI COMPLETAMENTE
         pool = allQuestions.filter(q => q.category !== 'ti');
     }
 
     // 2. Criar a progressão de dificuldade (5 Fáceis, 5 Médias, 5 Difíceis)
-    // Se não houver exato, pegamos aleatório do que sobrou
     const easy = pool.filter(q => q.difficulty === 1).sort(() => 0.5 - Math.random());
     const medium = pool.filter(q => q.difficulty === 2).sort(() => 0.5 - Math.random());
     const hard = pool.filter(q => q.difficulty === 3).sort(() => 0.5 - Math.random());
@@ -1069,14 +1069,14 @@ function startGame(mode) {
 
     selectedQuestions = [...qEasy, ...qMedium, ...qHard];
 
-    // Se ainda não deu 15 (caso o filtro tenha falhado), completa com aleatórias restantes
+    // Se ainda não deu 15, completa com aleatórias restantes
     if (selectedQuestions.length < 15) {
         const usedIds = new Set(selectedQuestions.map(q => q.question));
         const remaining = pool.filter(q => !usedIds.has(q.question)).sort(() => 0.5 - Math.random());
         selectedQuestions = selectedQuestions.concat(remaining.slice(0, 15 - selectedQuestions.length));
     }
     
-    // Corta em 15 caso tenha passado (segurança)
+    // Corta em 15 caso tenha passado
     currentQuestions = selectedQuestions.slice(0, 15);
 
     currentQuestionIndex = 0;
@@ -1086,7 +1086,6 @@ function startGame(mode) {
     btn5050.disabled = false;
     
     renderPrizeList();
-    totalQNum.textContent = currentQuestions.length;
     
     switchScreen(screenGame);
     loadQuestion();
@@ -1097,14 +1096,23 @@ function loadQuestion() {
     
     questionText.textContent = q.question;
     categoryBadge.textContent = formatCategory(q.category);
-    currentQNum.textContent = currentQuestionIndex + 1;
     
+    // Atualizar Indicador de Nível com Animação
+    currentLevelAnim.textContent = currentQuestionIndex + 1;
+    
+    // Reiniciar a animação CSS removendo e readicionando a classe
+    currentLevelAnim.classList.remove('level-pop');
+    void currentLevelAnim.offsetWidth; // Trigger reflow
+    currentLevelAnim.classList.add('level-pop');
+
     // Atualizar Barra de Progresso
-    const progressPercent = ((currentQuestionIndex) / currentQuestions.length) * 100;
+    // Calculamos baseado no início da questão. Questão 1 = 1/15 já preenchido visualmente para dar incentivo?
+    // Ou melhor: Começa vazio e enche conforme acerta?
+    // Vamos fazer: enche proporcionalmente ao número da questão atual
+    const progressPercent = ((currentQuestionIndex + 1) / 15) * 100;
     progressFill.style.width = `${progressPercent}%`;
     
     // Atualiza display de prêmio mobile
-    // prizes[] agora tem strings como "1. Pão de Queijo", removemos o número para ficar bonito no mobile
     const rawPrize = prizes[currentQuestionIndex];
     const prizeText = rawPrize.includes('. ') ? rawPrize.split('. ')[1] : rawPrize;
     currentPrizeDisplay.textContent = `Valendo: ${prizeText}`;
@@ -1127,7 +1135,7 @@ function loadQuestion() {
         // Animação de entrada com delay (cascata)
         setTimeout(() => {
             btn.classList.add('slide-in-option');
-        }, index * 100); // 100ms de diferença entre cada opção
+        }, index * 100); 
     });
 
     updatePrizeLadder();

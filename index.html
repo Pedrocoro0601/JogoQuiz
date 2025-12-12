@@ -26,7 +26,7 @@
                     <span class="icon">☕</span>
                     <div class="btn-text">
                         <strong>Jogar em Família</strong>
-                        <span>Tudim misturado</span>
+                        <span>Tudim misturado (Sem TI)</span>
                     </div>
                 </button>
                 <button class="btn btn-tech btn-lg" onclick="startGame('tech')">
@@ -67,9 +67,18 @@
                 <!-- Área Principal -->
                 <div class="question-area">
                     <div class="question-card">
+                        <!-- Novo Indicador de Progresso Imersivo -->
                         <div class="question-meta">
-                            <span>Questão <span id="current-question-num">1</span>/<span id="total-questions">10</span></span>
-                            <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+                            <div class="level-display">
+                                <span class="level-label">NÍVEL</span>
+                                <div class="level-number-box">
+                                    <span id="current-level-anim">1</span>
+                                    <span class="level-total">/15</span>
+                                </div>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
                         </div>
                         <h2 id="question-text">Carregando pergunta...</h2>
                     </div>
